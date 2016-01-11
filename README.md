@@ -17,11 +17,10 @@
     add this code after line config.extraPlugins 
     
     config.contentsCss = CKEDITOR.basePath +'/plugins/fontawesome/font-awesome/css/font-awesome.min.css';
-	
-    * In your HTML's <head> section add this code:
-        <script>CKEDITOR.dtd.$removeEmpty['span'] = false;</script>
-    * OR add this code to the last file themes/admin_default/js/main.js
-        CKEDITOR.dtd.$removeEmpty['span'] = false; 
+		
+		add this code befor the code  return $return; in file assets/editors/ckeditor/nv.php
+		
+		$return .= "<script>CKEDITOR.dtd.\$removeEmpty['span'] = false;</script>";
  
 ![ScreenShot](https://lh3.googleusercontent.com/JXbGoHDz1xe0Rw11mnT4vAkaSWKsJBKpfV3kGinMoADmz3k3ZDPugGhuzhTDIDR4OaXhfuS5E9Qg3yzVQJ18uo6x_XGMCQSKe9-AGA8KmCMKK0fcMQNXiEJBC5h-ur7qowWF6eU_3P0N3e6zT9ok4FvZr6pBqamvo_uPXRNxX-GdcU9kqS4LDYbEAPLNQjQHymqXWAUyRNjbJRXOMDhaujs0Oypeo-k0YOQZQwLHCbObYqUiWuitx3Wf0UEuMtRkbyj6CnyzjPIN97zARrg9veQI7e6aaVGv2faQ3cvfYi49uFH_DmzC3jDrvPLhdlxUMXqQWA4UKEH_RVLdhaJPb-UYHsiDAnY8ioFm1jLX5CtvvaTx1Z8D0BISufKfFMwpZpx0WY6Gcl7_WYre8phIWziByhXtIG5k6gegojAeqtB9WAVytl4NKatQuTQOee7A_fJe_rvp7tKGoMUyNZpi1LZHrMXSh9x3rzaN87ttFP2PBgBp5aMxEJQtIK1PgnbAUHRtN3r-b200ekyPH3fIaBDhVygsLVvlbvvpeq47fWK9bQorE_HzobJ2iYDzSwTrBrBE=w629-h670-no?raw=true)
  
