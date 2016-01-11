@@ -14,6 +14,10 @@
     
     config.extraPlugins = 'video,eqneditor,switchbar,tbvdownload,googledocs,fontawesome';
     
+    add this code after line config.extraPlugins 
+    
+    config.contentsCss = CKEDITOR.basePath +'/plugins/fontawesome/font-awesome/css/font-awesome.min.css';
+	
     * In your HTML's <head> section add this code:
         <script>CKEDITOR.dtd.$removeEmpty['span'] = false;</script>
     * OR add this code to the last file themes/admin_default/js/main.js
